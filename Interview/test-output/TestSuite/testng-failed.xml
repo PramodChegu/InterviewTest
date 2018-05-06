@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="POC.TestCases">
+        <methods>
+          <include name="afterTest"/>
+          <include name="startTest"/>
+          <include name="loginWithAbsoluteXpaths" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- POC.TestCases -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

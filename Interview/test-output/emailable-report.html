@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">TestSuite</th></tr>
+<tr><td><a href="#t0">ChromeTest</a></td><td class="num">6</td><td class="num">0</td><td class="num attn">1</td><td class="num">29,328</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ChromeTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">POC.TestCases</td><td><a href="#m0">loginWithAbsoluteXpaths</a></td><td rowspan="1">1525516383583</td><td rowspan="1">10915</td></tr><tr><th colspan="4">ChromeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">POC.TestCases</td><td><a href="#m1">loginToFacebook</a></td><td rowspan="2">1525516381774</td><td rowspan="2">1808</td></tr><tr class="passedeven"><td><a href="#m2">loginToFacebook</a></td></tr><tr class="passedeven"><td><a href="#m3">loginWithAbsoluteXpaths</a></td><td rowspan="1">1525516394504</td><td rowspan="1">1805</td></tr><tr class="passedeven"><td><a href="#m4">loginWithDynamicXpaths</a></td><td rowspan="2">1525516398807</td><td rowspan="2">1776</td></tr><tr class="passedeven"><td><a href="#m5">loginWithDynamicXpaths</a></td></tr><tr class="passedeven"><td><a href="#m6">verifyFontColorOfLogInButton</a></td><td rowspan="1">1525516400584</td><td rowspan="1">1000</td></tr></tbody>
+</table>
+<h2>ChromeTest</h2><h3 id="m0">POC.TestCases#loginWithAbsoluteXpaths</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>testuser_1</td><td>Test@123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;u_0_2&quot;]&quot;}
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:18:15&apos;
+System info: host: &apos;DESKTOP-O7QH6NU&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\Pramod\AppData\Local\Temp\scoped_dir15588_14528}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.139, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 952a3f8b74cb5d8a1db295391f118d81
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at POC.TestCases.loginWithAbsoluteXpaths(TestCases.java:97)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">POC.TestCases#loginToFacebook</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>testuser_2</td><td>Test@456</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">POC.TestCases#loginToFacebook</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>testuser_1</td><td>Test@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">POC.TestCases#loginWithAbsoluteXpaths</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>testuser_2</td><td>Test@456</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">POC.TestCases#loginWithDynamicXpaths</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>testuser_2</td><td>Test@456</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">POC.TestCases#loginWithDynamicXpaths</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>testuser_1</td><td>Test@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">POC.TestCases#verifyFontColorOfLogInButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
